@@ -56,9 +56,9 @@ public class Main {
 			}
 		});
 		
-		frame.addMouseListener(new MouseAdapter() {
+		frame.addMouseMotionListener(new MouseAdapter() {
 			@Override
-			public void mouseReleased(MouseEvent e) {
+			public void mouseDragged(MouseEvent e) {
 				// get location of Window
 	            int thisX = frame.getLocation().x;
 	            int thisY = frame.getLocation().y;
